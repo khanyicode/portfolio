@@ -1,0 +1,235 @@
+header {
+    background: url('path/to/your/image.jpg') center/cover no-repeat; 
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 15px 0 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Center the main sections */
+#about,
+#projects,
+#skills,
+#contact {
+    text-align: center;
+}
+
+/* Center the project card content */
+.project-card {
+    text-align: left;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the project card horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5; /* Light gray background color */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Added background-color to the transition */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Change to a different color on hover if needed */
+}
+body {
+
+    #about {
+        background-color: #f8f8f8; /* Choose your desired background color */
+        padding: 20px; /* Adjust padding as needed */
+    }
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+h2 {
+    color: #007bff;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+/* Add transitions to links */
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+#contact {
+    text-align: center;
+}
+
+form {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    margin: 10px 0;
+}
+#skills {
+    margin-top: 20px; /* Add some space above the section */
+}
+
+/* Style the individual skill categories */
+#skills p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#skills {
+    margin-top: 20px; /* Add some space above the section */
+}
+
+/* Style the individual skill categories */
+#skills {
+    margin-top: 20px;
+}
+
+#skills h2, #skills p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin-bottom: 5px;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+#skills ul li:hover {
+    color: #007bff;
+    background-color: #f5f5f5;
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+section#contact {
+    text-align: center; /* Center-align the content within the section */
+}
+
+form {
+    max-width: 600px; /* Set a maximum width for the form for better readability */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+    display: block; /* Display each label on a new line */
+    margin: 10px 0; /* Add space above and below each label */
+}
+
+input,
+textarea {
+    width: 100%; /* Make the input fields and textarea fill the entire width of the form */
+    padding: 10px; /* Add padding to the input fields and textarea for better spacing */
+    margin-bottom: 15px; /* Add space below each input field and textarea */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Set the background color for the submit button */
+    color: #fff; /* Set the text color for the submit button */
+    cursor: pointer; /* Change cursor to pointer on hover for better user experience */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
