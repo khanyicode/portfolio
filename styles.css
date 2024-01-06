@@ -10,22 +10,22 @@ body {
 
 header {
     margin-bottom: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #6d4d6e; /* Purple background color */
+    color: white;
     text-align: center;
     padding: 20px 0;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .header-content {
-    color: rgb(127, 72, 153);
+    color: white;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
 
 nav a {
-    color: rgb(72, 72, 153);
+    color: #6d4d6e;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s;
@@ -36,13 +36,13 @@ nav {
 }
 
 nav a:hover {
-    color: rgb(127, 72, 153);
+    color: white;
     text-decoration: underline;
 }
 
 h1 {
     margin: 15px 0 10px;
-    text-align: center; /* Center the h1 headings */
+    text-align: center;
 }
 
 p {
@@ -55,17 +55,17 @@ p {
 #about,
 #projects,
 #contact {
-    text-align: center; /* Center the main sections */
+    text-align: center;
 }
 
 #about {
-    background-color: #000;
+    background-color: #6d4d6e;
     padding: 20px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 #about:hover {
-    background-color: #000;
+    background-color: #6d4d6e;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.918);
 }
@@ -82,7 +82,7 @@ section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #000;
+    background-color: #6d4d6e;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
@@ -93,7 +93,7 @@ section {
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: #000;
+    background-color: #6d4d6e;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, opacity 0.3s;
     opacity: 0.8;
 }
