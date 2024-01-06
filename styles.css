@@ -1,106 +1,38 @@
-
-
-/* Header Animation */
-@keyframes rotateHeader {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
-
-
 body {
-    margin: 0; /* Remove default body margin */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #000;
+    color: rgb(127, 72, 153);
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    margin-bottom: 0; /* Adjust the margin as needed */
-}
-
-.header-content {
-    margin-bottom: 0; /* Adjust the margin as needed */
-}
-
-
-/* Header Styles */
-header {
-    background-color: #2c3e50; /* Header background color */
-    padding: 10px 0;
-    animation: rotateHeader 5s infinite linear; /* Apply the rotation animation */
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .header-content {
     color: rgb(127, 72, 153);
     text-align: center;
-}
-
-nav a {
-    color: rgb(72, 72, 153);
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff3366;
-}
-/* Header Styles */
-header {
-    background-color: #2c3e50; /* Header background color */
-    padding: 10px 0;
-    animation: rotateHeader 5s infinite linear; /* Apply the rotation animation */
-}header {
-    background-color: #f10909bb;
-    padding: 20px;
-}
-
-.header-content {
-    color: rgb(127, 72, 153);
-    text-align: center;
-}
-
-nav a {
-    color: rgb(72, 72, 153);
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff3366;
-}
-
-.header-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-h1 {
-    margin: 15px 0 10px;
-}
-
-p {color: rgb(127, 72, 153);
-    margin: 0;
-    font-size: 20px;
-    opacity: 0.8;
+nav a {
+    color: rgb(72, 72, 153);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 nav {
     margin-top: 20px;
-}
-
-nav a {
-   
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -108,79 +40,34 @@ nav a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
+h1 {
+    margin: 15px 0 10px;
+    text-align: center; /* Center the h1 headings */
 }
 
-/* Center the main sections */
+p {
+    color: rgb(127, 72, 153);
+    margin: 0;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
 #about,
 #projects,
-#skills,
 #contact {
-    text-align: center;
-}
-
-/* Center the project card content */
-.project-card {
-    text-align: left;
-    max-width: 600px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the project card horizontally */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(5, 0, 0, 0.664);
-    background-color: #080808; /* Light gray background color */
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Added background-color to the transition */
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: #030303; /* Change to a different color on hover if needed */
-}
-body {
-
-    #about {
-        background-color: rgb(12, 12, 12); /* Choose your desired background color */
-        padding: 20px; /* Adjust padding as needed */
-    }
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333333;
-    transition: background-color 0.3s, color 0.3s;
+    text-align: center; /* Center the main sections */
 }
 
 #about {
-    background-color: rgb(12, 12, 12);
-    padding: 20px;
-    transition: background-color 0.3s;
-}
-
-#about {
-    background-color: rgb(12, 12, 12);
+    background-color: #000;
     padding: 20px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 #about:hover {
-    background-color: #020202; /* Choose a different color for the hover effect */
-    transform: scale(1.05); /* Scale the element by 5% on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.918); /* Add a subtle box-shadow on hover */
-}
-
-header {
-    background-color: #050505;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.918);
 }
 
 header h1 {
@@ -192,246 +79,38 @@ header p {
 }
 
 section {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px 0;
+    background-color: #000;
+    border-radius: 8px;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-h2 {
-    color: #007bff;
-}
-
-section p {
-    line-height: 1.6;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
 .project-card {
-    transition: transform 0.3s;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, opacity 0.3s;
+    opacity: 0.8;
 }
 
 .project-card:hover {
     transform: scale(1.1);
-}
-
-/* Add transitions to links */
-a {
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #007bff;
-}
-
-#contact {
-    text-align: center;
-}
-
-form {
-    max-width: 400px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the form horizontally */
-}
-
-form label,
-form input,
-form textarea {
-    display: block;
-    margin: 10px 0;
-}
-#skills {
-    margin-top: 20px;
-    padding: 20px; /* Add padding for better visual effect */
-    transition: background-color 0.3s; /* Add transition for background color */
-}
-
-/* Style the individual skill categories */
-#skills h2,
-#skills p {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills ul li {
-    margin-bottom: 5px;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-#skills:hover {
-    background-color: #080808; /* Change the background color on hover */
-}
-
-#skills {
-    margin-top: 20px;
-    padding: 20px; /* Add padding for better visual effect */
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Add transitions for transform, background color, and box shadow */
-}
-
-/* Style the individual skill categories */
-#skills h2,
-#skills p {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills ul li {
-    margin-bottom: 5px;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-#skills:hover {
-    background-color: #080808; /* Change the background color on hover */
-    transform: scale(1.05); /* Scale up the section on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow on hover for a pop-out effect */
-}
-
-form textarea {
-    resize: vertical; /* Allow vertical resizing of the textarea */
-}
-
-section#contact {
-    text-align: center; /* Center-align the content within the section */
-}
-
-form {
-    max-width: 600px; /* Set a maximum width for the form for better readability */
-    margin: 0 auto; /* Center the form horizontally */
-}
-
-label {
-    display: block; /* Display each label on a new line */
-    margin: 10px 0; /* Add space above and below each label */
-}
-
-input,
-textarea {
-    width: 100%; /* Make the input fields and textarea fill the entire width of the form */
-    padding: 10px; /* Add padding to the input fields and textarea for better spacing */
-    margin-bottom: 15px; /* Add space below each input field and textarea */
-}
-
-input[type="submit"] {
-    background-color: #007bff; /* Set the background color for the submit button */
-    color: #fff; /* Set the text color for the submit button */
-    cursor: pointer; /* Change cursor to pointer on hover for better user experience */
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Change the background color on hover */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Slide-in Animation */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /* Apply animations to elements */
 body {
-  animation: fadeIn 1s ease-in-out;
-}
-
-section, header, footer {
-  animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 nav a {
-  animation: slideIn 0.5s ease-in-out;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #050505; /* Dark background color */
-    color: rgb(127, 72, 153);; /* Light text color */
-}
-
-header {
-    background-color: #070707;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
+    animation: slideIn 0.5s ease-in-out;
+    display: inline-block;
     margin-right: 20px;
-}
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #070707; /* Darker section background color */
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #020202;
-    color: rgb(127, 72, 153);   text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.contact-section {
-    /* Add your regular styling for the contact section here */
-    padding: 20px;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s; /* Add transition effect for background color */
-}
-
-/* Hover effect for the contact section */
-.contact-section:hover {
-    background-color: #e0e0e0; /* Change the background color on hover */
-}
-
-/* Add hover effect for links inside the contact section */
-.contact-section a:hover {
-    color: rgb(7, 0, 2); /* Change the link color on hover */
 }
