@@ -1,116 +1,52 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     padding: 0;
-    background-color: #000;
-    color: rgb(127, 72, 153);
-    box-sizing: border-box;
+    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9); /* Updated background color */
+    color: #6d4d6e;
     transition: background-color 0.3s, color 0.3s;
+ 
+
+    font-size: 16px;
 }
 
 header {
-    margin-bottom: 0;
-    background-color: #6d4d6e; /* Purple background color */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    transition: background-color 0.3s, color 0.3s;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9); /* Updated background color */
 }
 
 .header-content {
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-nav a {
     color: #6d4d6e;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-h1 {
-    margin: 15px 0 10px;
-    text-align: center;
-}
-
-p {
-    color: rgb(127, 72, 153);
-    margin: 0;
-    font-size: 20px;
-    opacity: 0.8;
+    text-align: left;
+    max-width: 600px;
 }
 
 #about,
 #projects,
 #contact {
-    text-align: center;
-}
-
-#about {
-    background-color: #6d4d6e;
-    padding: 20px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-#about:hover {
-    background-color: #6d4d6e;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.918);
-}
-
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin: 5px 0 0;
-}
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #6d4d6e;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.project-card {
     text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-color: #6d4d6e;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, opacity 0.3s;
+    color: white;
+}
+
+section,
+.project-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #6d4d6e;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s, opacity 0.3s;
     opacity: 0.8;
 }
 
-.project-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-    opacity: 1;
+#about:hover,
+#projects:hover,
+#contact:hover {
+    transform: scale(1.03);
 }
 
-/* Apply animations to elements */
-body {
-    animation: fadeIn 1s ease-in-out;
-}
-
-nav a {
-    animation: slideIn 0.5s ease-in-out;
-    display: inline-block;
-    margin-right: 20px;
+body::-webkit-scrollbar-thumb {
+    background-color: #e0e6e9;
 }
