@@ -1,32 +1,85 @@
 body {
     font-family: 'Georgia', serif;
     padding: 0;
-    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9); /* Updated background color */
-    color: #6d4d6e;
+    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9);
+    color: white;
     transition: background-color 0.3s, color 0.3s;
- 
-
     font-size: 16px;
 }
 
 header {
-    height: 100vh;
-    padding: 20px;
-    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9); /* Updated background color */
+    height: 80vh;
+    padding: 180px 20px 20px 10%;
+    background: linear-gradient(to bottom, #6d4d6e, #e0e6e9);
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
 }
 
 .header-content {
-    color: #6d4d6e;
-    text-align: left;
+    color: white;
+    text-align: right;
     max-width: 600px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 #about,
 #projects,
 #contact {
-    text-align: left;
+    flex: 1;
+    text-align: center;
     background-color: #6d4d6e;
+    color: darkpurple;
+    margin: 20px;
+}
+
+css
+
+
+.project-card a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.project-card a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#about:hover,
+#projects:hover,
+#contact:hover {
+    transform: scale(1.03);
+}
+
+a {
+    color: darkpurple;
+    font-weight: bold;
+}
+
+a:hover {
     color: white;
+}
+
+a:active,
+a:visited {
+    color: darkpurple;
 }
 
 section,
@@ -41,10 +94,9 @@ section,
     opacity: 0.8;
 }
 
-#about:hover,
-#projects:hover,
-#contact:hover {
-    transform: scale(1.03);
+.project-card {
+    margin-left: auto;
+    text-align: right;
 }
 
 body::-webkit-scrollbar-thumb {
